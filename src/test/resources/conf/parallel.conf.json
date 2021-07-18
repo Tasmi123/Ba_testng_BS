@@ -11,13 +11,14 @@
 
   "environments": {
     "env1": {
+      "os": "Windows",
+      "os_version": "10",
       "browser": "chrome",
-	  "os_version": "latest",
-	  "resolution": "1920x1080",
+      "resolution": "1920x1080",
 	  "browser_version": "latest"
     },
     "env2": {
-       "browserName": "iPhone",
+      "browserName": "iPhone",
       "device": "iPhone 12 Pro Max",
       "realMobile": "true",
       "os_version": "14"
