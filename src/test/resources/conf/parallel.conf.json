@@ -1,16 +1,20 @@
 {
   "server": "hub-cloud.browserstack.com",
-  "user": "sifattasmi_Cux3tc",
-  "key": "9F9FCSNwZUFMtpDn1ty2",
+  "user": "tasmikadar_MEcogf",
+  "key": "S7tX35xwywpzKqLkCeP6",
 
   "capabilities": {
-    
+    "build": BROWSERSTACK_BUILD_NAME,
+    "name": BROWSERSTACK_BUILD_NAME,
     "browserstack.debug": true
   },
 
   "environments": {
     "env1": {
-      "browser": "chrome"
+      "browser": "chrome",
+	  "os_version": "latest",
+	  "resolution": "1920x1080",
+	  "browser_version": "latest"
     },
     "env2": {
        "browserName": "iPhone",
