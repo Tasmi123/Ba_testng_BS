@@ -37,14 +37,17 @@ public class BrowserStackTestNGTest {
             capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
         }
 
-        Map<String, String> commonCapabilities = (Map<String, String>) config.get("capabilities");
-        it = commonCapabilities.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry pair = (Map.Entry) it.next();
-            if (capabilities.getCapability(pair.getKey().toString()) == null) {
-                capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
-            }
-        }
+       // Map<String, String> commonCapabilities = (Map<String, String>) config.get("capabilities");
+       // it = commonCapabilities.entrySet().iterator();
+        //while (it.hasNext()) {
+            //Map.Entry pair = (Map.Entry) it.next();
+            //if (capabilities.getCapability(pair.getKey().toString()) == null) {
+                //capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
+            //}
+        //}
+        String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+        capabilities.setCapability("build", buildName);
+        capabilities.setCapability("name", "BStack-[Java] Sample Test");
 
         String username = System.getenv("BROWSERSTACK_USERNAME");
         if (username == null) {

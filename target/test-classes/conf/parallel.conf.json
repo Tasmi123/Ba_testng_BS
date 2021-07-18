@@ -1,20 +1,24 @@
 {
   "server": "hub-cloud.browserstack.com",
-  "user": "sifattasmi_Cux3tc",
-  "key": "9F9FCSNwZUFMtpDn1ty2",
+  "user": "tasmikadar_MEcogf",
+  "key": "S7tX35xwywpzKqLkCeP6",
 
   "capabilities": {
-    "build": "bA-build-1",
-    "name": "navbar",
+    "build": "biuld",
+    "name": "biuld",
     "browserstack.debug": true
   },
 
   "environments": {
     "env1": {
-      "browser": "chrome"
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "chrome",
+      "resolution": "1920x1080",
+	  "browser_version": "latest"
     },
     "env2": {
-       "browserName": "iPhone",
+      "browserName": "iPhone",
       "device": "iPhone 12 Pro Max",
       "realMobile": "true",
       "os_version": "14"
