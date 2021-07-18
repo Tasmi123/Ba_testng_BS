@@ -1,10 +1,10 @@
 {
   "server": "hub-cloud.browserstack.com",
-  "user": "tamannasifat_xlPCBG",
-  "key": "qj7saWsrStjzw5btxcB4",
+  "user": "sifattasmi_Cux3tc",
+  "key": "9F9FCSNwZUFMtpDn1ty2",
 
   "capabilities": {
-    "build": "Buy_App_ver2",
+    "build": "bA-build-1",
     "name": "navbar",
     "browserstack.debug": true
   },
