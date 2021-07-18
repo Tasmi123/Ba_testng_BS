@@ -4,8 +4,8 @@
   "key": "S7tX35xwywpzKqLkCeP6",
 
   "capabilities": {
-    "build": BROWSERSTACK_BUILD_NAME,
-    "name": BROWSERSTACK_BUILD_NAME,
+    "build": "biuld",
+    "name": "biuld",
     "browserstack.debug": true
   },
 
