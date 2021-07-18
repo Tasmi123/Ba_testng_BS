@@ -4,8 +4,7 @@
   "key": "9F9FCSNwZUFMtpDn1ty2",
 
   "capabilities": {
-    "build": "bA-build-1",
-    "name": "navbar",
+    
     "browserstack.debug": true
   },
 
