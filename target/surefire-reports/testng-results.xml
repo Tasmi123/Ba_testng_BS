@@ -1,200 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="5" passed="2" failed="3" skipped="0">
+<testng-results total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-18T13:12:09Z" name="Parallel" finished-at="2021-07-18T13:18:23Z" duration-ms="374754">
+  <suite started-at="2021-07-18T14:26:47Z" name="Parallel" finished-at="2021-07-18T14:33:56Z" duration-ms="429232">
     <groups>
     </groups>
-    <test started-at="2021-07-18T13:12:09Z" name="SingleTestEnv2" finished-at="2021-07-18T13:12:22Z" duration-ms="13533">
+    <test started-at="2021-07-18T14:26:47Z" name="SingleTestEnv3" finished-at="2021-07-18T14:32:18Z" duration-ms="331114">
       <class name="com.browserstack.SingleTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@13c9d689]" started-at="2021-07-18T19:12:09Z" name="setUp" finished-at="2021-07-18T19:12:18Z" duration-ms="9668" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[parallel.conf.json]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[env2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@13c9d689]" started-at="2021-07-18T19:12:18Z" name="test" finished-at="2021-07-18T19:12:21Z" duration-ms="2455" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browser_name: iPhone, browserstack.appium_version: 1.17.0, browserstack.isTargetBased: true, browserstack.is_hub_canary: false, buildName: Buy_App_ver2, databaseEnabled: false, detected_language: selenium/3.12.0 (java windows), device: iphone, deviceName: iPhone 12 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 12 Pro Max-14.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 14, os_version: 14.0, platform: MAC, platformName: MAC, realMobile: true, real_mobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionName: navbar, takesScreenshot: true, udid: 00008101-00124D400CF8001E, useXctestrunFile: true, version: , wda_port: 8405, webStorageEnabled: false, webkitResponseTimeout: 20000}
-Session ID: 82261e244ef56cb40f28a070475aa0200f2efe8b
-*** Element info: {Using=class name, value=ba-footer-link}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browser_name: iPhone, browserstack.appium_version: 1.17.0, browserstack.isTargetBased: true, browserstack.is_hub_canary: false, buildName: Buy_App_ver2, databaseEnabled: false, detected_language: selenium/3.12.0 (java windows), device: iphone, deviceName: iPhone 12 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 12 Pro Max-14.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 14, os_version: 14.0, platform: MAC, platformName: MAC, realMobile: true, real_mobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionName: navbar, takesScreenshot: true, udid: 00008101-00124D400CF8001E, useXctestrunFile: true, version: , wda_port: 8405, webStorageEnabled: false, webkitResponseTimeout: 20000}
-Session ID: 82261e244ef56cb40f28a070475aa0200f2efe8b
-*** Element info: {Using=class name, value=ba-footer-link}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:403)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at com.browserstack.SingleTest.test(SingleTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@13c9d689]" started-at="2021-07-18T19:12:21Z" name="tearDown" finished-at="2021-07-18T19:12:22Z" duration-ms="1369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.SingleTest -->
-    </test> <!-- SingleTestEnv2 -->
-    <test started-at="2021-07-18T13:12:09Z" name="SingleTestEnv4" finished-at="2021-07-18T13:14:30Z" duration-ms="141395">
-      <class name="com.browserstack.SingleTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@408d971b]" started-at="2021-07-18T19:12:09Z" name="setUp" finished-at="2021-07-18T19:12:14Z" duration-ms="5653" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[parallel.conf.json]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[env4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@408d971b]" started-at="2021-07-18T19:12:14Z" name="test" finished-at="2021-07-18T19:14:28Z" duration-ms="134148" status="FAIL">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: about:blank, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11, webdriver.remote.sessionid: 816677d92ccc8927557bc2bf85b...}
-Session ID: 816677d92ccc8927557bc2bf85bd8f118d722056]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: about:blank, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11, webdriver.remote.sessionid: 816677d92ccc8927557bc2bf85b...}
-Session ID: 816677d92ccc8927557bc2bf85bd8f118d722056
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
-	at com.browserstack.SingleTest.test(SingleTest.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.io.IOException: unexpected end of stream on Connection{hub-cloud.browserstack.com:80, proxy=DIRECT hostAddress=hub-cloud.browserstack.com/173.234.104.3:80 cipherSuite=none protocol=http/1.1}
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
-	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	... 23 more
-Caused by: java.io.EOFException: \n not found: limit=0 content=…
-	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
-	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-	... 41 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@408d971b]" started-at="2021-07-18T19:14:28Z" name="tearDown" finished-at="2021-07-18T19:14:30Z" duration-ms="1563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.SingleTest -->
-    </test> <!-- SingleTestEnv4 -->
-    <test started-at="2021-07-18T13:12:09Z" name="SingleTestEnv3" finished-at="2021-07-18T13:17:16Z" duration-ms="307737">
-      <class name="com.browserstack.SingleTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@5b7a5baa]" started-at="2021-07-18T19:12:09Z" name="setUp" finished-at="2021-07-18T19:12:15Z" duration-ms="6228" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@1d296da]" started-at="2021-07-18T20:26:47Z" name="setUp" finished-at="2021-07-18T20:26:57Z" duration-ms="9704" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,23 +23,23 @@ Caused by: java.io.EOFException: \n not found: limit=0 content=…
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@5b7a5baa]" started-at="2021-07-18T19:12:15Z" name="test" finished-at="2021-07-18T19:17:15Z" duration-ms="299717" status="FAIL">
+        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@1d296da]" started-at="2021-07-18T20:26:57Z" name="test" finished-at="2021-07-18T20:31:57Z" duration-ms="300146" status="FAIL">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20F71, safari:platformVersion: 11.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 5bc1206095cfdafc4c9b19d2d10..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 5bc1206095cfdafc4c9b19d2d10815ee40121de8]]>
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20F71, safari:platformVersion: 11.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 3664d37416b5222d2173f405d72..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 3664d37416b5222d2173f405d72f30ff22d8c749]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20F71, safari:platformVersion: 11.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 5bc1206095cfdafc4c9b19d2d10..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 5bc1206095cfdafc4c9b19d2d10815ee40121de8
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20F71, safari:platformVersion: 11.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 3664d37416b5222d2173f405d72..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 3664d37416b5222d2173f405d72f30ff22d8c749
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
 	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
@@ -251,7 +64,7 @@ Session ID: 5bc1206095cfdafc4c9b19d2d10815ee40121de8
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.io.IOException: unexpected end of stream on Connection{hub-cloud.browserstack.com:80, proxy=DIRECT hostAddress=hub-cloud.browserstack.com/173.234.104.3:80 cipherSuite=none protocol=http/1.1}
+Caused by: java.io.IOException: unexpected end of stream on Connection{hub-cloud.browserstack.com:80, proxy=DIRECT hostAddress=hub-cloud.browserstack.com/173.234.104.2:80 cipherSuite=none protocol=http/1.1}
 	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
 	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
@@ -283,15 +96,93 @@ Caused by: java.io.EOFException: \n not found: limit=0 content=…
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@5b7a5baa]" started-at="2021-07-18T19:17:15Z" name="tearDown" finished-at="2021-07-18T19:17:16Z" duration-ms="1764" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@1d296da]" started-at="2021-07-18T20:31:57Z" name="tearDown" finished-at="2021-07-18T20:31:57Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20F71, safari:platformVersion: 11.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 3664d37416b5222d2173f405d72..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 3664d37416b5222d2173f405d72f30ff22d8c749]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-2VOUIIE', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20F71, safari:platformVersion: 11.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 3664d37416b5222d2173f405d72..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 3664d37416b5222d2173f405d72f30ff22d8c749
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.browserstack.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.net.ConnectException: Failed to connect to hub-cloud.browserstack.com/173.234.104.3:80
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 25 more
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:579)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:339)
+	at java.base/java.net.Socket.connect(Socket.java:603)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+	... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.SingleTest -->
     </test> <!-- SingleTestEnv3 -->
-    <test started-at="2021-07-18T13:12:09Z" name="SingleTestEnv1" finished-at="2021-07-18T13:18:12Z" duration-ms="363580">
+    <test started-at="2021-07-18T14:26:47Z" name="SingleTestEnv1" finished-at="2021-07-18T14:32:53Z" duration-ms="366009">
       <class name="com.browserstack.SingleTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@235834f2]" started-at="2021-07-18T19:12:09Z" name="setUp" finished-at="2021-07-18T19:12:13Z" duration-ms="4624" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@4218d6a3]" started-at="2021-07-18T20:26:47Z" name="setUp" finished-at="2021-07-18T20:26:52Z" duration-ms="4557" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -307,19 +198,19 @@ Caused by: java.io.EOFException: \n not found: limit=0 content=…
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@235834f2]" started-at="2021-07-18T19:12:13Z" name="test" finished-at="2021-07-18T19:18:11Z" duration-ms="357363" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@4218d6a3]" started-at="2021-07-18T20:26:52Z" name="test" finished-at="2021-07-18T20:32:51Z" duration-ms="359662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@235834f2]" started-at="2021-07-18T19:18:11Z" name="tearDown" finished-at="2021-07-18T19:18:12Z" duration-ms="1572" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@4218d6a3]" started-at="2021-07-18T20:32:51Z" name="tearDown" finished-at="2021-07-18T20:32:53Z" duration-ms="1769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.SingleTest -->
     </test> <!-- SingleTestEnv1 -->
-    <test started-at="2021-07-18T13:12:09Z" name="SingleTestEnv5" finished-at="2021-07-18T13:18:23Z" duration-ms="374754">
+    <test started-at="2021-07-18T14:26:47Z" name="SingleTestEnv5" finished-at="2021-07-18T14:33:28Z" duration-ms="400973">
       <class name="com.browserstack.SingleTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@22555ebf]" started-at="2021-07-18T19:12:09Z" name="setUp" finished-at="2021-07-18T19:12:15Z" duration-ms="6712" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@45752059]" started-at="2021-07-18T20:26:47Z" name="setUp" finished-at="2021-07-18T20:26:53Z" duration-ms="5640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -335,15 +226,71 @@ Caused by: java.io.EOFException: \n not found: limit=0 content=…
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@22555ebf]" started-at="2021-07-18T19:12:15Z" name="test" finished-at="2021-07-18T19:18:22Z" duration-ms="366411" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@45752059]" started-at="2021-07-18T20:26:53Z" name="test" finished-at="2021-07-18T20:33:27Z" duration-ms="393835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@22555ebf]" started-at="2021-07-18T19:18:22Z" name="tearDown" finished-at="2021-07-18T19:18:23Z" duration-ms="1611" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@45752059]" started-at="2021-07-18T20:33:27Z" name="tearDown" finished-at="2021-07-18T20:33:28Z" duration-ms="1479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.SingleTest -->
     </test> <!-- SingleTestEnv5 -->
+    <test started-at="2021-07-18T14:26:47Z" name="SingleTestEnv2" finished-at="2021-07-18T14:33:29Z" duration-ms="401960">
+      <class name="com.browserstack.SingleTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@62379589]" started-at="2021-07-18T20:26:47Z" name="setUp" finished-at="2021-07-18T20:26:57Z" duration-ms="9906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@62379589]" started-at="2021-07-18T20:26:57Z" name="test" finished-at="2021-07-18T20:33:28Z" duration-ms="390565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@62379589]" started-at="2021-07-18T20:33:28Z" name="tearDown" finished-at="2021-07-18T20:33:29Z" duration-ms="1469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.SingleTest -->
+    </test> <!-- SingleTestEnv2 -->
+    <test started-at="2021-07-18T14:26:47Z" name="SingleTestEnv4" finished-at="2021-07-18T14:33:56Z" duration-ms="429232">
+      <class name="com.browserstack.SingleTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.SingleTest@3c46e67a]" started-at="2021-07-18T20:26:47Z" name="setUp" finished-at="2021-07-18T20:26:53Z" duration-ms="5570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:com.browserstack.SingleTest@3c46e67a]" started-at="2021-07-18T20:26:53Z" name="test" finished-at="2021-07-18T20:33:55Z" duration-ms="422088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SingleTest@3c46e67a]" started-at="2021-07-18T20:33:55Z" name="tearDown" finished-at="2021-07-18T20:33:56Z" duration-ms="1553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.SingleTest -->
+    </test> <!-- SingleTestEnv4 -->
   </suite> <!-- Parallel -->
 </testng-results>

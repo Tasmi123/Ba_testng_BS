@@ -4,3 +4,4 @@ local.log
 .gradle
 build/
 .DS_Store
+/target/
